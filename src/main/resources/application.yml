@@ -8,11 +8,5 @@ spring:
     password: admin
   jms:
     pub-sub-domain: false
-  datasource:
-    druid:
-      url: jdbc:mysql://10.10.49.103:3306/uccp?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-      username: icomp
-      password: icomp
-      driver-class-name: com.mysql.cj.jdbc.Driver
 
 jobqueue: job-queue
