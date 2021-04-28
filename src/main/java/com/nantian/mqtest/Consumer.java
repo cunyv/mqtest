@@ -11,10 +11,10 @@ import javax.jms.TextMessage;
  * @Date 2021/4/19 14:10
  * @Description TODO
  */
-@Component
+//@Component
 public class Consumer {
 
-    @JmsListener(destination = "job-queue")
+//    @JmsListener(destination = "job-queue")
     public void receive(TextMessage textMessage){
         try {
         System.out.println("=====================");
