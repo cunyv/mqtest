@@ -1,4 +1,4 @@
-package com.nantian.pool;
+package com.nantian.mqtest.pool;
 
 /**
  * @Author zhangjian
