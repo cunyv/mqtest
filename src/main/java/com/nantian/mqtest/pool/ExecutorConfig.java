@@ -14,7 +14,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * @Author zhangjian
  * @Date 2021/5/18 16:06
- * @Description TODO
+ * @Description 线程池配置 先进队列 然后才扩充线程数 直到扩充到max_pool_size
  */
 @Configuration
 @EnableAsync
@@ -29,7 +29,6 @@ public class ExecutorConfig {
     private int queueCapacity;
     @Value("${async.executor.thread.name.prefix}")
     private String namePrefix;
-
 
     @Bean(name = "asyncServiceExecutor")
     public Executor asyncServiceExecutor() {
@@ -50,5 +49,4 @@ public class ExecutorConfig {
         executor.initialize();
         return executor;
     }
-
 }

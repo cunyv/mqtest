@@ -16,8 +16,6 @@ public class HHH {
     private static Logger logger = LoggerFactory.getLogger(HHH.class);
 
     public static void main(String[] args) {
-        Random random = new Random();
-        System.out.println(random.nextInt(100));
     }
 
     @Async(value = "asyncServiceExecutor")

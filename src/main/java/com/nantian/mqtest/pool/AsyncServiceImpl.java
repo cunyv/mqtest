@@ -21,7 +21,7 @@ public class AsyncServiceImpl implements AsyncService{
     public void executeAsync(int i) {
         logger.info("start executeAsync");
         System.out.println("异步线程要做的事情" + i);
-        System.out.println("可以在这里执行批量插入等耗时的事情" + i);
+        System.out.println("业务逻辑" + i);
         logger.info("end executeAsync");
     }
 }

@@ -16,6 +16,6 @@ async:
     thread:
       core_pool_size: 5
       max_pool_size: 20
-      queue_capacity: 1000
+      queue_capacity: 500
       name:
         prefix: async-
